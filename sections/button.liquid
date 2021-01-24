@@ -1,0 +1,33 @@
+<div>
+  <a href="{{ section.settings.buttonurl }}"> {{ section.settings.button-text }} </a>
+</div>
+
+
+
+{% schema %}
+  {
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button-text",
+          "label": "Text",
+		      "default": "Click Here"
+        },
+        {
+          "type": "url",
+          "id": "buttonurl",
+          "label": "Link"
+        }
+
+]
+,
+    "presets": [
+    {
+        "name": "Button",
+        "category": "Button"
+    }
+    ]
+	}
+
+{% endschema %}
